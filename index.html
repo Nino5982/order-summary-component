@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Red Hat Display"
+      rel="stylesheet"
+    />
+    <title>order-summary-component</title>
+    <style>
+      body {
+        position: relative;
+        width: 1440px;
+        height: 900px;
+
+        background: #e0e8ff;
+      }
+      .background-div {
+        height: 437px;
+        width: 1440px;
+      }
+      .card {
+        position: absolute;
+        height: 697px;
+        width: 450px;
+        left: 495px;
+        top: 102px;
+        border-radius: 20px;
+
+        background: #ffffff;
+        box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+        border-radius: 20px;
+      }
+      .illustration-hero {
+        border-radius: 20px 20px 0px 0px;
+        height: 220px;
+        width: 450px;
+        max-width: 100%;
+        overflow: hidden;
+      }
+      .header {
+        height: 132px;
+        width: 354px;
+        text-align: center;
+        margin-left: 48px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+      }
+      .header h1 {
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 37px;
+        /* identical to box height */
+
+        text-align: center;
+
+        color: #1f2e55;
+      }
+      .header p {
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */
+
+        text-align: center;
+
+        color: #717fa6;
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+      .music {
+        display: flex;
+        width: 354px;
+        height: 98px;
+        background: #f7f9ff;
+        border-radius: 11px;
+        margin-left: 48px;
+        margin-right: 48px;
+        align-items: center;
+      }
+
+      .icon {
+        margin-left: 24px;
+        width: 48px;
+        height: 48px;
+        margin-right: 20px;
+      }
+      .plan {
+        height: 48px;
+        width: 92px;
+      }
+      .annual {
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 25px;
+        color: #1f2e55;
+        margin: 0;
+      }
+      .price {
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+
+        color: #717fa6;
+        margin: 0;
+      }
+      .Change {
+        width: 52px;
+        height: 19px;
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        /* identical to box height */
+
+        color: #766cf1;
+        text-decoration-line: underline;
+        padding-left: 75px;
+      }
+      .payment {
+        background: #766cf1;
+        box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+        border-radius: 11px;
+        height: 50px;
+        width: 354px;
+        margin-top: 32px;
+        margin-left: 48px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      .payment p {
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height */
+
+        color: #ffffff;
+        padding: 15px 102px 15px 102px;
+      }
+      .Cancel-Order {
+        height: 20px;
+        width: 96px;
+        left: 176px;
+        top: 629px;
+        font-family: "Red Hat Display";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height */
+
+        color: #1f2e55;
+        padding-left: 176px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-div">
+      <img
+        src="pattern-background-desktop.svg"
+        alt="pattern-background-desktop"
+        class="background-pattern"
+      />
+    </div>
+    <div class="card">
+      <img
+        src="illustration-hero.svg"
+        alt="illustration-hero"
+        class="illustration-hero"
+      />
+      <div class="header">
+        <h1>Order Summary</h1>
+        <p>
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </div>
+      <div class="music">
+        <img src="icon-music.svg" alt="icon-music" class="icon" />
+        <div class="plan">
+          <p class="annual">Annual Plan</p>
+          <p class="price">$59.99/year</p>
+        </div>
+        <p class="Change">Change</p>
+      </div>
+      <div class="payment">
+        <p>Proceed to Payment</p>
+      </div>
+      <div class="Cancel-Order">
+        <p>Cancel Order</p>
+      </div>
+    </div>
+  </body>
+</html>
